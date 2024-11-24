@@ -3,9 +3,9 @@ import torch.nn as nn
 
 
 # Define a torch model
-class SingleHeadModelMultiClass(nn.Module):
+class SingleHeadMultiClass(nn.Module):
     def __init__(self):
-        super(SingleHeadModelMultiClass, self).__init__()
+        super(SingleHeadMultiClass, self).__init__()
         # Convolutional layers
         self.conv1 = nn.Conv2d(in_channels=3, out_channels=32, kernel_size=3, padding=1, bias=False)
         self.conv2 = nn.Conv2d(in_channels=32, out_channels=64, kernel_size=3, padding=1, bias=False)

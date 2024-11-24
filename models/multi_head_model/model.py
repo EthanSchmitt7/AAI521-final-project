@@ -4,7 +4,7 @@ import torch.nn as nn
 
 # Define a torch model
 class MultiHeadModel(nn.Module):
-    def __init__(self, device, group_sizes: list[int] = None):
+    def __init__(self, group_sizes: list[int] = None):
         super(MultiHeadModel, self).__init__()
         # Number of class groups
         self.group_sizes = [3, 2, 2, 2, 4, 2, 3, 7, 3, 3, 6] if group_sizes is None else group_sizes
