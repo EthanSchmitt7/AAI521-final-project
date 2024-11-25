@@ -30,6 +30,7 @@ class SingleHeadSingleClass(nn.Module):
 
         # Activation functions
         self.relu = nn.ReLU()
+        self.softmax = nn.Softmax(dim=1)
 
     def forward(self, x):
         # Convolutional layers
