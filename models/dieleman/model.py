@@ -32,9 +32,9 @@ class Maxout(nn.Module):
 
 
 # Define a torch model
-class Model(nn.Module):
+class Dieleman(nn.Module):
     def __init__(self):
-        super(Model, self).__init__()
+        super(Dieleman, self).__init__()
 
         # Convolutional layers
         self.conv1 = nn.Conv2d(in_channels=3, out_channels=32, kernel_size=6, padding=1, bias=False)
